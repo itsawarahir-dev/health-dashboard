@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Health Dashboard | 7–13 ก.ย.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Prompt', 'Plus Jakarta Sans', 'sans-serif'],
+            num: ['Plus Jakarta Sans', 'Prompt', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #f8fafc; color: #0f172a; }
+    .card { box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05); }
+  </style>
+</head>
+<body class="antialiased">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+
+    <!-- Header -->
+    <header class="bg-white rounded-2xl p-6 border border-slate-200/80 card flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div>
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-medium mb-2">
+          <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+          Health Tracker • รายงานสรุป 7 วัน
+        </span>
+        <h1 class="text-2xl sm:text-3xl font-bold text-slate-900">Personal Health Dashboard</h1>
